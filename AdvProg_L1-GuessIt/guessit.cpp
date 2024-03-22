@@ -28,7 +28,7 @@ int getPlayerGuess() {
     // TODO: Ask the player guest and return the player's number
     int number;
     cout << "The number you guess is (0 - 100): ";
-    cin >> number
+    cin >> number;
     return number;
 }
 
@@ -47,17 +47,18 @@ string getAnswer(int number, int randomNumber) {
               If number is lower than randomNumber, the answer is "Your number is lower."
               If number is equal randomNumber, the answer is "Congratulation! You win."
     ***/
+    string answer;
     if (number > randomNumber)
       {
-      	answer = "Your number is higher";
+      	answer = "Your number is higher.";
 	  }
 	else if (number < randomNumber)
 	  {
-	    answer = "Your number is lower";	
+	    answer = "Your number is lower.";	
 	  }  
 	else
 	{
-	  answer = "Congratulation! You win."  
+	  answer = "Congratulation! You win.";  
     }
     return answer;
 }
@@ -108,8 +109,8 @@ bool checkContinuePlaying(char isContinued) {
 char getPlayerOpinion() {
     // TODO: Ask the player about continue playing and return the player's choice
     char isContinued;
-    cout << "Do you want to continue playing (Y/N): " 
-    cin >> is Continued;
+    cout << "Do you want to continue playing (Y/N): "; 
+    cin >> isContinued;
     return isContinued;
 }
 
